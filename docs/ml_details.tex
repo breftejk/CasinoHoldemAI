@@ -1,0 +1,28 @@
+\section{Machine Learning Details}
+
+\subsection{XGBoost Ensemble}
+Model ensemble:
+\[
+F(x) = \sum_{m=1}^M f_m(x),\quad
+\hat{y} = \sigma(F(x)) = \frac{1}{1 + e^{-F(x)}}.
+\]
+Objective:
+\[
+\mathcal{L} = \sum_i \ell(y_i,\hat{y}_i) + \sum_{m}\Omega(f_m),
+\quad
+\Omega(f) = \gamma T + \tfrac12\lambda\lVert w\rVert^2.
+\]
+
+\subsection{Hyperparameter Tuning}
+Grid search over:
+\[
+\{\text{max\_depth}, \eta, \text{subsample}, \text{colsample\_bytree}, \lambda, \gamma\}
+\]
+using 5-fold CV to minimize logloss.
+
+\subsection{Bias-Variance Tradeoff}
+Generalization error:
+\[
+\mathrm{Err} = \mathrm{Bias}^2 + \mathrm{Variance} + \text{Noise}.
+\]
+Regularization and learning rate control complexity.

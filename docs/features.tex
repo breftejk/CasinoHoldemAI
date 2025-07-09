@@ -1,0 +1,13 @@
+\section{Data \& Feature Engineering}
+
+\subsection{Monte Carlo Outputs}
+\begin{itemize}
+  \item \texttt{win\_rate}, \texttt{tie\_rate}
+  \item 95\% CI: $\hat{p}\pm1.96\sqrt{\hat{p}(1-\hat{p})/N}$
+\end{itemize}
+
+\subsection{Hand Patterns}
+Indicator vector length 9: pair, two\_pair, trips, straight, flush, full\_house, quads, straight\_flush, royal\_flush.
+
+\subsection{Card Encoding}
+Ranks $\{2,\dots,9,T,J,Q,K,A\}\to\{2,\dots,14\}$; suits mapped to $\{1,\dots,4\}$.

@@ -1,0 +1,32 @@
+# Virtual env
+.venv/
+
+# Build/dist
+build/
+dist/
+*.egg-info/
+
+# Data files
+data/
+
+# Model files
+models/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# IDE settings
+.idea/
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# Temp files
+*~
+*.swp

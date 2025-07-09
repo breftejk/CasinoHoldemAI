@@ -1,0 +1,16 @@
+\section{API Reference}
+
+\subsection{Generate Data (\texttt{gen})}
+\begin{verbatim}
+casino-ai gen --n N --out PATH [--iters I] [--workers W]
+\end{verbatim}
+
+\subsection{Train Model (\texttt{train})}
+\begin{verbatim}
+casino-ai train --in PATH --model PATH
+\end{verbatim}
+
+\subsection{Predict Decision (\texttt{pred})}
+\begin{verbatim}
+casino-ai pred --model PATH --cards C1,C2 --board B1,B2,B3 [--threshold T]
+\end{verbatim}

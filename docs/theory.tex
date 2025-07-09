@@ -1,0 +1,28 @@
+\section{Theoretical Foundations}
+
+\subsection{Monte Carlo Simulation}
+Let $W_i$ be the indicator of a win on trial $i$. Then:
+\[
+\hat{p} = \frac{1}{N} \sum_{i=1}^N W_i, 
+\quad \mathrm{Var}(\hat{p}) = \frac{\hat{p}(1-\hat{p})}{N}.
+\]
+By the Central Limit Theorem, for large $N$:
+\[
+\hat{p} \sim \mathcal{N}\!\Bigl(p,\,\frac{p(1-p)}{N}\Bigr).
+\]
+A $100(1-\alpha)\%$ confidence interval:
+\[
+\hat{p} \pm z_{\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}.
+\]
+
+\subsection{Feature Engineering}
+Define rank frequency vector $\mathbf{c} = [c_2,\dots,c_{\mathrm{A}}]$. Pattern indicators:
+\[
+\text{Pair} = \mathbb{I}\bigl(\max(\mathbf{c})\ge2\bigr),\quad
+\text{Trips} = \mathbb{I}\bigl(\max(\mathbf{c})\ge3\bigr).
+\]
+Expected outs calculation:
+\[
+E[\text{outs}] = \sum_k o_k \frac{\binom{o_k}{1}\binom{R - o_k}{T-1}}{\binom{R}{T}},
+\]
+normalized to $[0,1]$.

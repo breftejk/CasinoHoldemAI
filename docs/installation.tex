@@ -1,0 +1,21 @@
+\section{Installation}
+\begin{enumerate}
+  \item Create a virtual environment:
+  \begin{verbatim}
+python3 -m venv .venv
+source .venv/bin/activate
+  \end{verbatim}
+  \item Upgrade core tools:
+  \begin{verbatim}
+pip install --upgrade pip setuptools wheel Cython
+  \end{verbatim}
+  \item Install dependencies and package:
+  \begin{verbatim}
+pip install numpy pandas eval7 scikit-learn xgboost joblib tqdm
+pip install .
+  \end{verbatim}
+  \item Verify:
+  \begin{verbatim}
+casino-ai --help
+  \end{verbatim}
+\end{enumerate}

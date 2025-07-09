@@ -1,0 +1,9 @@
+\section{System Architecture}
+\begin{description}
+  \item[CLI:] \texttt{argparse}-based command parsing.
+  \item[Simulator:] $\mathcal{O}(N)$ Monte Carlo per hand, parallel via \texttt{joblib.Parallel}.
+  \item[FeatureExtractor:] Computation of combinatorial/statistical features.
+  \item[DataGenerator:] Batch orchestration with progress via \texttt{tqdm}.
+  \item[ModelTrainer:] XGBoost training with train/validation split.
+  \item[PokerAI:] Real-time simulation + ML inference.
+\end{description}

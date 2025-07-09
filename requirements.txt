@@ -1,0 +1,7 @@
+numpy
+pandas
+eval7
+scikit-learn
+xgboost
+joblib
+tqdm
