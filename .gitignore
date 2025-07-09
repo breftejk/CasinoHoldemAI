@@ -30,3 +30,5 @@ Desktop.ini
 # Temp files
 *~
 *.swp
+
+docgen.py
