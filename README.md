@@ -1,6 +1,6 @@
 # CasinoHoldemAI
 
-A production-grade decision engine for Casino Hold’em that combines Monte Carlo simulation with XGBoost.
+A decision engine for Casino Hold’em that combines Monte Carlo simulation with XGBoost.
 
 ## Documentation
 
