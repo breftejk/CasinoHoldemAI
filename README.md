@@ -14,7 +14,7 @@ The full documentation is available as a PDF:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip setuptools wheel Cython
-pip install .
+pip install -e .
 ```
 
 ## CLI Usage
