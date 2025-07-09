@@ -21,26 +21,26 @@ pip install .
 
 - **Generate training data**  
   ```bash
-  casino-ai gen \\
-    --n 200000 \\
-    --out data/train.csv \\
-    --iters 1000 \\
+  casino-ai gen \
+    --n 200000 \
+    --out data/train.csv \
+    --iters 1000 \
     --workers 8
   ```
 
 - **Train XGBoost model**  
   ```bash
-  casino-ai train \\
-    --in data/train.csv \\
+  casino-ai train \
+    --in data/train.csv \
     --model models/holdem.xgb
   ```
 
 - **Predict CALL/FOLD decision**  
   ```bash
-  casino-ai pred \\
-    --model models/holdem.xgb \\
-    --cards QS,QH \\
-    --board QD,2C,7H \\
+  casino-ai pred \
+    --model models/holdem.xgb \
+    --cards QS,QH \
+    --board QD,2C,7H \
     --threshold 0.6
   ```
 
